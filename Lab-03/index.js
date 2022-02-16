@@ -13,4 +13,4 @@ app.get('/', function(req, res){
 })
 
 // 3. RUN SERVER
-app.listen(3003, ()=>console.log("Server started"))
+app.listen(3000, ()=>console.log("Server started"))
