@@ -1,0 +1,21 @@
+{{#extends 'base'}}
+
+{{#block "content"}}
+    <form method="POST">
+        <div>
+            <label class="form-label">Weight:</label>
+            <input type="text" class="form-control" name="weight"/>
+        </div>
+        <div>
+            <label class="form-label">Height:</label>
+            <input type="text" class="form-control" name="height"/>
+        </div>
+
+        {{!-- Submit --}}
+        <div>
+            <input type="submit" value="Calculate" />
+        </div>
+    </form>
+{{/block}}
+
+{{/extends}}
