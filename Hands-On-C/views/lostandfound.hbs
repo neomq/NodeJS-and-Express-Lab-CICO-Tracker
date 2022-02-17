@@ -1,0 +1,52 @@
+{{#extends 'base'}}
+
+{{#block "content"}}
+    <form method="POST">
+        <div>
+            <label class="form-label">Name of item:</label>
+            <input type="text" class="form-control" name="name"/>
+        </div>
+
+        <div>
+            <label class="form-label">Email:</label>
+            <input type="text" class="form-control" name="email"/>
+        </div>
+
+        {{!-- Radio --}}
+        <div>
+            <label>Location</label>
+            <div>
+                <div>
+                    <input type="radio" class="form-check-input" name="location" value="taxi" checked/>
+                    <label class="form-check-label">Taxi</label>
+                </div>
+                <div>
+                    <input type="radio" class="form-check-input" name="location" value="bus"/>
+                    <label class="form-check-label">Bus</label>
+                </div>
+                <div>
+                    <input type="radio" class="form-check-input" name="location" value="mrt"/>
+                    <label class="form-check-label">MRT</label>
+                </div>
+            </div>
+        </div>
+
+        {{!-- Checkboxes --}}
+        <div>
+            <label>Properties</label>
+            <input type="checkbox" name="properties" value="bulky"/><label>Bulky<label>
+            <input type="checkbox" name="properties" value="expensive"/><label>Expensive<label>
+            <input type="checkbox" name="properties" value="colorful"/><label>Colorful<label>
+            <input type="checkbox" name="properties" value="branded"/><label>Branded<label>
+            <input type="checkbox" name="properties" value="small"/><label>Small<label>
+            <input type="checkbox" name="properties" value="plain"/><label>Plain<label>
+        </div>
+
+        {{!-- Submit --}}
+        <div>
+            <input type="submit" value="submit" />
+        </div>
+    </form>
+{{/block}}
+
+{{/extends}}
